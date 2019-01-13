@@ -1,0 +1,6 @@
+1) DNS - 8.8.8.8
+2) Install XAMPP
+3) Run XAMPP
+4) Change port
+5) Run it again
+6) Create small program to print anything on screen.
