@@ -1,0 +1,4 @@
+1. strcmp($str1,$str2)
+2. strncmp($str1,Str2,4)
+3. substr();
+4. 

@@ -1,0 +1,4 @@
+1) If else Ladder
+2) Switch Statements
+3) Arrays
+4) Loops
