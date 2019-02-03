@@ -25,7 +25,7 @@
 	$a = 100;
     $b = 20;
     $sum = $a + $b;
-
+	
     echo "sum of two numbers is:$sum";
 
 
