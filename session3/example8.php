@@ -29,6 +29,4 @@ while($counter < 10000) {
 	$counter = $counter+1;
 }
 
-
-
 ?>
