@@ -1,4 +1,5 @@
 1) If else Ladder
 2) Switch Statements
-3) Arrays
-4) Loops
+3) Arrays - both
+4) Loops - for,while,do-while,foreach (normal arrays and associative arrays)
+5) database

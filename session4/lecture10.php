@@ -18,7 +18,16 @@ $company["zipcode"] = "201301";
 $user["personal_detail"] = $personal;
 $user["company_detail"] = $company;
 
-print_r($user);
+
+$users = array();
+
+$user2 = $user;
+
+$users[0] = $user;
+$users[1] = $user2;
+ 
+
+print_r($users);
 
 echo "</pre>";
 ?>
