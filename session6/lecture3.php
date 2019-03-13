@@ -1,11 +1,8 @@
 <?php
 
 class User {
+	
 	private $conn;
-	private $name;
-	private $password;
-	private $age;
-	private $city;
 	
 	public function __construct() {
 		$servername = "localhost";

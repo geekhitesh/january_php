@@ -2,10 +2,6 @@
 
 class User {
 	private $conn;
-	private $name;
-	private $password;
-	private $age;
-	private $city;
 	
 	public function __construct() {
 		$servername = "localhost";
@@ -16,8 +12,6 @@ class User {
 		$this->conn = new mysqli($servername, $username, $password,$schema);
 		if ($this->conn->connect_error)
 			die("unable to connect");
-		
-		echo "Database connection created successfully<br/>";
 	}
 	
 	public function login($user_id,$input_password) {
@@ -27,9 +21,9 @@ class User {
 		$rows = $result->num_rows;
 		
 		if($rows ==1) {
-			echo "Login Successful<br/>";
+			return $user_id;
 		} else
-			echo "Login Failed.<br/>";
+			return "00000";
 		
 	}
 	
@@ -56,12 +50,23 @@ class User {
 	public function displayAll() {
 		
 	}
-	
+
+	public function detailsById($user_id) {
+		
+		$query = "select user_id,user_name,user_city from user where user_id='$user_id'";
+		$result = $this->conn->query($query);
+		$record = array();
+		while($row = mysqli_fetch_assoc($result)) {
+			$record = $row;
+		}
+		return $record;
+	}	
 	
 	public function __destruct() {
 		$this->conn->close();
-		echo "DB Connection Closed Successfully<br/>";
 	}
+	
+	
 }
 
 ?>
